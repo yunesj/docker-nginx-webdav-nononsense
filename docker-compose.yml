@@ -13,6 +13,6 @@ services:
             - TZ=America/New_York
             - SERVER_NAMES=localhost
             - TIMEOUTS_S=1200 # these are seconds
-            - CLIENT_MAX_BODY_SIZE=120M # must end with M(egabytes) or G(igabytes)
+            - CLIENT_MAX_BODY_SIZE=1G # must end with M(egabytes) or G(igabytes)
         ports:
             - 32080:80
