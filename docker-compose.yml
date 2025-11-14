@@ -1,6 +1,7 @@
 services:
     nginxwebdav:
         container_name: nginxwebdav
+        restart: unless-stopped
         build:
             context: .
         volumes:
