@@ -10,8 +10,6 @@ services:
             - PUID=501
             - PGID=20
             - TZ=Europe/Berlin
-            - WEBDAV_USERNAME=user
-            - WEBDAV_PASSWORD=password
             - SERVER_NAMES=localhost
             - TIMEOUTS_S=1200 # these are seconds
             - CLIENT_MAX_BODY_SIZE=120M # must end with M(egabytes) or G(igabytes)
