@@ -7,11 +7,11 @@ services:
             - ./config:/config
             # - ./custom-cont-init.d:/custom-cont-init.d # optional: additional cont-init.d-scripts like multi-user support
         environment:
-            - PUID=501
-            - PGID=20
-            - TZ=Europe/Berlin
+            - PUID=33
+            - PGID=33
+            - TZ=America/Los_Angeles
             - SERVER_NAMES=localhost
             - TIMEOUTS_S=1200 # these are seconds
-            - CLIENT_MAX_BODY_SIZE=120M # must end with M(egabytes) or G(igabytes)
+            - CLIENT_MAX_BODY_SIZE=1G # must end with M(egabytes) or G(igabytes)
         ports:
             - 32080:80
